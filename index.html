@@ -4,11 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231</title>
+    <title>WDD 231 | Darlene Kalu</title>
+    <meta name="description"
+        content="Course home page for WDD 231 with Darlene Kalu's profile and the Web and Computer Programming certificate courses.">
+    <meta name="author" content="Darlene Kalu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
-    Heyyy
+    <header>
+        <div class="brand">
+            <img src="images/logo.svg" alt="Site logo" width="48" height="48">
+            <span>Darlene Kalu</span>
+        </div>
+        <button id="menu" type="button" aria-label="Toggle menu" aria-controls="nav-list"
+            aria-expanded="false">☰</button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="chamber/index.html">Chamber Project</a></li>
+                <li><a href="final/index.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="intro">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I'm Darlene Kalu, a web development student from Enugu, Nigeria. I like turning a blank page into
+                    something people can actually use, and I care about the small details: clear layouts, readable text,
+                    and pages that work on any screen. I'm patient with problems, curious about how things work, and
+                    happiest when a stubborn bug finally gives way. I'm building my skills one project at a time, and I
+                    want to create websites that make everyday life a little easier for the people who use them.</p>
+            </section>
+
+            <section id="photo">
+                <h2>Student Photo</h2>
+                <img src="images/photo.webp" alt="Portrait of Darlene Kalu" width="300" height="400">
+            </section>
+        </div>
+
+        <section id="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter="CSE">CSE</button>
+                <button type="button" data-filter="WDD">WDD</button>
+            </div>
+            <div id="course-list" class="course-list"></div>
+            <p id="credits">The total credits for courses listed above is <span id="total-credits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/darlenekalu" aria-label="LinkedIn"><img src="images/linkedin.svg"
+                    alt="" width="40" height="40"></a>
+            <a href="https://github.com/kaluScripts" aria-label="GitHub"><img src="images/github.svg" alt="" width="40"
+                    height="40"></a>
+            <a href="https://instagram.com/abacus111_2" aria-label="X"><img src="images/instagram.svg" alt="" width="40"
+                    height="40"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="currentyear"></span> &bull; Darlene Kalu &bull; Nigeria</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,131 @@
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: #111;
+  background: #fff;
+  overflow-wrap: anywhere;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* ---------- Header and navigation ---------- */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.brand { display: flex; align-items: center; gap: 0.75rem; font-weight: 600; }
+
+#menu {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #111;
+  background: #d9d9d9;
+  border: 2px solid #222;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+nav { flex-basis: 100%; }
+
+#nav-list {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+#nav-list.open { display: flex; }
+
+#nav-list a {
+  display: block;
+  padding: 0.9rem 1rem;
+  color: #fff;
+  background: #222;
+  border-top: 1px solid #555;
+  font-weight: 600;
+  text-decoration: none;
+}
+#nav-list a:hover { background: #444; }
+#nav-list a.active { background: #0b5394; }
+a:focus-visible, button:focus-visible { outline: 3px solid #0b5394; outline-offset: 2px; }
+
+/* ---------- Main ---------- */
+main { padding: 0 1rem 1rem; }
+h1 { margin: 0.5rem 0; font-weight: 600; }
+
+section { background: #d9d9d9; margin-bottom: 1rem; }
+
+section h2 {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background: #222;
+}
+
+#about p { margin: 0; padding: 1rem; }
+
+#photo img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+
+/* ---------- Courses ---------- */
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.filters button {
+  padding: 0.6rem;
+  font: inherit;
+  font-weight: 600;
+  color: #111;
+  background: #f2f2f2;
+  border: 2px solid #222;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.filters button:hover { background: #cfcfcf; }
+.filters button.selected { color: #fff; background: #222; }
+
+.course-list { display: grid; gap: 0.5rem; padding: 0 1rem; }
+
+.course-card {
+  padding: 0.6rem;
+  text-align: center;
+  font-weight: 600;
+  color: #111;
+  background: #bdbdbd;
+  border: 1px solid #666;
+}
+.course-card.completed { color: #fff; background:#14502a; border-color: #14502a; }
+.course-card.completed::before { content: "\2713\00a0"; }
+
+#credits { margin: 0; padding: 1rem; text-align: center; font-size: 0.9rem; }
+
+/* ---------- Footer ---------- */
+footer { text-align: center; }
+
+.social { display: flex; justify-content: center; gap: 1.5rem; padding: 1rem; }
+
+.footer-info { background: #d9d9d9; padding: 0.75rem 1rem; }
+.footer-info p { margin: 0.25rem 0; }
