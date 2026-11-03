@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Coal City Coffee House",
+        "tagline": "Brewed in the heart of Enugu",
+        "category": "Café",
+        "address": "14 Ogui Road, Enugu",
+        "phone": "+234 803 555 0101",
+        "email": "info@coalcitycoffee.example",
+        "website": "https://coalcitycoffee.example",
+        "image": "coal-city-coffee.webp",
+        "membership": 3
+    },
+    {
+        "name": "Hillside Tech Hub",
+        "tagline": "Where Enugu builds what's next",
+        "category": "Technology",
+        "address": "5 Independence Layout, Enugu",
+        "phone": "+234 805 555 0102",
+        "email": "hello@hillsidetech.example",
+        "website": "https://hillsidetech.example",
+        "image": "hillside-tech-hub.webp",
+        "membership": 3
+    },
+    {
+        "name": "Green Valley Farm Market",
+        "tagline": "Fresh from the farm to your table",
+        "category": "Agriculture",
+        "address": "3 Trans-Ekulu Road, Enugu",
+        "phone": "+234 807 555 0103",
+        "email": "orders@greenvalleyfarm.example",
+        "website": "https://greenvalleyfarm.example",
+        "image": "green-valley-market.webp",
+        "membership": 2
+    },
+    {
+        "name": "Premier Care Pharmacy",
+        "tagline": "Care you can count on",
+        "category": "Health",
+        "address": "18 Chime Avenue, New Haven, Enugu",
+        "phone": "+234 809 555 0104",
+        "email": "care@premiercarepharmacy.example",
+        "website": "https://premiercarepharmacy.example",
+        "image": "premier-care-pharmacy.webp",
+        "membership": 2
+    },
+    {
+        "name": "Savanna Events & Catering",
+        "tagline": "Making every moment count",
+        "category": "Events",
+        "address": "40 Okpara Avenue, Enugu",
+        "phone": "+234 802 555 0105",
+        "email": "book@savannaevents.example",
+        "website": "https://savannaevents.example",
+        "image": "savanna-events.webp",
+        "membership": 2
+    },
+    {
+        "name": "Eastern Star Tailors",
+        "tagline": "Sharp fits for every occasion",
+        "category": "Fashion",
+        "address": "22 Zik Avenue, Uwani, Enugu",
+        "phone": "+234 806 555 0106",
+        "email": "studio@easternstartailors.example",
+        "website": "https://easternstartailors.example",
+        "image": "eastern-star-tailors.webp",
+        "membership": 1
+    },
+    {
+        "name": "Ugwu & Sons Hardware",
+        "tagline": "Everything you need to build it right",
+        "category": "Construction",
+        "address": "31 Abakpa Road, Enugu",
+        "phone": "+234 808 555 0107",
+        "email": "sales@ugwuandsons.example",
+        "website": "https://ugwuandsons.example",
+        "image": "ugwu-and-sons.webp",
+        "membership": 1
+    },
+    {
+        "name": "Enugu Print & Signs",
+        "tagline": "Your brand, in print",
+        "category": "Printing",
+        "address": "9 Market Road, Enugu",
+        "phone": "+234 810 555 0108",
+        "email": "jobs@enuguprint.example",
+        "website": "https://enuguprint.example",
+        "image": "enugu-print-signs.webp",
+        "membership": 1
+    }
+]
