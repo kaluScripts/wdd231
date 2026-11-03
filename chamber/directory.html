@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Enugu Chamber of Commerce</title>
+    <meta name="description"
+        content="Browse the Enugu Chamber of Commerce business directory: member companies, contact details and membership levels in Enugu, Nigeria.">
+    <meta name="author" content="Darlene Kalu">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Enugu Chamber of Commerce">
+    <meta property="og:title" content="Directory | Enugu Chamber of Commerce">
+    <meta property="og:description"
+        content="Browse the Enugu Chamber of Commerce business directory: member companies, contact details and membership levels in Enugu, Nigeria.">
+    <meta property="og:image" content="https://kaluscripts.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:image:alt" content="Enugu Chamber of Commerce logo on a green background">
+    <meta property="og:url" content="https://kaluscripts.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="" width="48" height="48">
+            <span>Enugu Chamber of Commerce</span>
+        </a>
+        <button id="menu" type="button" aria-label="Toggle menu" aria-controls="nav-list"
+            aria-expanded="false">&#9776;</button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Directory</h1>
+
+        <div class="view-toggle" role="group" aria-label="Choose directory layout">
+            <button type="button" id="grid" class="active" aria-pressed="true">Grid</button>
+            <button type="button" id="list" aria-pressed="false">List</button>
+        </div>
+
+        <div id="members" class="grid"></div>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Enugu Chamber of Commerce</strong></p>
+            <p>12 Ogui Road</p>
+            <p>Enugu 400001, Nigeria</p>
+            <p>info@enuguchamber.example</p>
+            <p>+234 800 555 0100</p>
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/" aria-label="YouTube"><img src="images/youtube.svg" alt="" width="40"
+                    height="40"></a>
+            <a href="https://x.com/" aria-label="X"><img src="images/x.svg" alt="" width="40" height="40"></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="" width="40"
+                    height="40"></a>
+        </div>
+        <div class="footer-info">
+            <p>WDD 231 Class Project</p>
+            <p>Darlene Kalu</p>
+            <p>&copy; <span id="currentyear"></span> Enugu Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+/* ---------- Tablet and up ---------- */
+@media (min-width: 768px) {
+  header {
+    flex-wrap: nowrap;
+    padding: 0.75rem max(2rem, calc((100% - 1200px) / 2));
+  }
+
+  #menu { display: none; }
+
+  nav { flex-basis: auto; }
+
+  #nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+  }
+
+  #nav-list a {
+    padding: 0.6rem 1rem;
+    border-top: none;
+    border-radius: 6px;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 2.5rem;
+  }
+
+  #members.grid { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+
+  /* list view: spread the details over two columns, still one member per row */
+  #members.list .details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem 1.5rem;
+  }
+  #members.list .details p { margin: 0; }
+  #members.list .level { grid-column: 1 / -1; justify-self: start; margin-bottom: 0.25rem; }
+
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 1.75rem max(2rem, calc((100% - 1200px) / 2));
+  }
+  .footer-info { justify-self: end; }
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 1024px) {
+  #members.grid { grid-template-columns: repeat(3, 1fr); }
+
+    .card-body img { width: 72px; height: 72px; }
+    .details { font-size: 0.85rem; }
+}
