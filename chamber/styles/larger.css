@@ -1,9 +1,17 @@
-/* ---------- Tablet and up ---------- */
+/* ---------- Larger phones: image beside the details ---------- */
+@media (min-width: 480px) {
+  .card-body { flex-direction: row; }
+  .details { flex: 1; width: auto; }
+}
+
+/* ---------- Tablet and up: horizontal nav, centered layout ---------- */
 @media (min-width: 768px) {
   header {
     flex-wrap: nowrap;
     padding: 0.75rem max(2rem, calc((100% - 1200px) / 2));
   }
+
+  .brand { flex: 0 1 auto; }
 
   #menu { display: none; }
 
@@ -27,9 +35,7 @@
     padding: 0 2rem 2.5rem;
   }
 
-  #members.grid { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
-
-  /* list view: spread the details over two columns, still one member per row */
+  /* list view: details in two columns, still one member per row */
   #members.list .details {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -46,10 +52,14 @@
   .footer-info { justify-self: end; }
 }
 
-/* ---------- Desktop ---------- */
-@media (min-width: 1024px) {
-  #members.grid { grid-template-columns: repeat(3, 1fr); }
+/* ---------- Two-column grid ---------- */
+@media (min-width: 900px) {
+  #members.grid { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+}
 
-    .card-body img { width: 72px; height: 72px; }
-    .details { font-size: 0.85rem; }
+/* ---------- Three-column grid ---------- */
+@media (min-width: 1200px) {
+  #members.grid { grid-template-columns: repeat(3, 1fr); }
+  .card-body img { width: 72px; height: 72px; }
+  .details { font-size: 0.85rem; }
 }
