@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Enugu Chamber of Commerce</title>
+    <meta name="description"
+        content="The Enugu Chamber of Commerce connects local businesses and the community. See member spotlights, current events and today's weather in Enugu, Nigeria.">
+    <meta name="author" content="Darlene Kalu">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Enugu Chamber of Commerce">
+    <meta property="og:title" content="Home | Enugu Chamber of Commerce">
+    <meta property="og:description"
+        content="The Enugu Chamber of Commerce connects local businesses and the community. See member spotlights, current events and today's weather in Enugu, Nigeria.">
+    <meta property="og:image" content="https://kaluscripts.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:image:alt" content="Enugu Chamber of Commerce logo on a green background">
+    <meta property="og:url" content="https://kaluscripts.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="" width="48" height="48">
+            <span>Enugu Chamber of Commerce</span>
+        </a>
+        <button id="menu" type="button" aria-label="Toggle menu" aria-controls="nav-list"
+            aria-expanded="false">&#9776;</button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/enugu-hills-hero.webp" alt="Sunrise over the green hills of Enugu" width="1600"
+                height="640" fetchpriority="high">
+            <div class="hero-content">
+                <h1>Welcome to the Enugu Chamber of Commerce</h1>
+                <p>Connecting the businesses of Coal City with each other and with the community.</p>
+                <a class="cta" href="join.html">Join the Chamber</a>
+            </div>
+        </div>
+
+        <section class="welcome">
+            <h2>Your Business Community</h2>
+            <p>The Enugu Chamber of Commerce brings the city's businesses together. We share local events, host
+                networking opportunities, keep a directory of member businesses and encourage residents to shop local. Whether you run a small shop or a large company, or you have just moved to Enugu, this is the place to start.</p>
+    </section>
+
+    <div class="home-grid">
+      <section class="events">
+        <h2>Current Events</h2>
+        <article class="event">
+          <p class="event-date"><time datetime="2026-11-20">Fri, 20 Nov 2026</time></p>
+          <h3>Business Networking Evening</h3>
+          <p>Meet other Enugu business owners over refreshments. Open to members and guests.</p>
+        </article>
+        <article class="event">
+          <p class="event-date"><time datetime="2026-11-27">Fri, 27 Nov 2026</time></p>
+          <h3>Small Business Workshop</h3>
+          <p>A hands-on session on getting your business found online.</p>
+        </article>
+        <article class="event">
+          <p class="event-date"><time datetime="2026-12-05">Sat, 5 Dec 2026</time></p>
+          <h3>Coal City Trade Fair</h3>
+          <p>A day of local products, services and new connections.</p>
+        </article>
+      </section>
+
+      <section class="weather">
+        <h2>Weather in Enugu</h2>
+        <div class="weather-card">
+          <div class="current-weather" aria-live="polite">
+            <p class="current-temp"><span id="current-temp">--</span>&deg;C</p>
+            <p id="current-desc">Loading weather&hellip;</p>
+          </div>
+          <h3>3-Day Forecast</h3>
+          <ul id="forecast" class="forecast"></ul>
+        </div>
+      </section>
+    </div>
+
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlights" class="spotlight-grid" aria-live="polite">
+        <p>Loading member spotlights&hellip;</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Enugu Chamber of Commerce</strong></p>
+      <p>12 Ogui Road</p>
+      <p>Enugu 400001, Nigeria</p>
+      <p>info@enuguchamber.example</p>
+      <p>+234 800 555 0100</p>
+    </div>
+    <div class="social">
+      <a href="https://www.youtube.com/" aria-label="YouTube"><img src="images/youtube.svg" alt="" width="40" height="40"></a>
+      <a href="https://x.com/" aria-label="X"><img src="images/twitter-x-icon.svg" alt="" width="40" height="40"></a>
+      <a href="https://www.linkedin.com/" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="" width="40" height="40"></a>
+    </div>
+    <div class="footer-info">
+      <p>WDD 231 Class Project</p>
+      <p>Darlene Kalu</p>
+      <p>&copy; <span id="currentyear"></span> Enugu Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
