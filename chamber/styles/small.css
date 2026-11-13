@@ -259,13 +259,12 @@ main section > h2 {
 .weather-card h3 { margin: 0 0 0.5rem; padding-top: 0.75rem; font-size: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.3); }
 .forecast .temp { display: block; font-size: 1.1rem; }
 .forecast .low { display: block; font-size: 0.85rem; }
-/* .forecast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin: 0; padding: 0; list-style: none; } */
-/* .forecast li { padding: 0.5rem; text-align: center; background: rgba(255, 255, 255, 0.12); border-radius: 8px; } */
 .forecast li { padding: 0.5rem; text-align: center; background: rgba(255, 255, 255, 0.08); border-radius: 8px; }
 .forecast .day { display: block; font-size: 0.85rem; font-weight: 600; }
-.forecast .temp { font-size: 1.1rem; }
 
 .spotlight-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
 .spotlight-grid .card-body { flex-direction: column; align-items: center; text-align: center; }
 .spotlight-grid .card-body img { width: 96px; height: 96px; }
-.spotlight-grid .details { width: 100%; }.forecast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.spotlight-grid .details { width: 100%; }
+
+.forecast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
