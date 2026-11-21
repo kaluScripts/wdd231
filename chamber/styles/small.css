@@ -268,3 +268,172 @@ main section > h2 {
 .spotlight-grid .details { width: 100%; }
 
 .forecast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+
+/* ---------- Join page ---------- */
+.join-layout {
+    display: grid;
+    gap: 2rem;
+}
+
+.join-form {
+    display: grid;
+    gap: 1rem;
+    background: #fff;
+    border: 1px solid #cfd8d2;
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    font: inherit;
+    font-weight: 400;
+    padding: 0.6rem;
+    border: 1px solid #4a4a4a;
+    border-radius: 6px;
+    background: #fff;
+    color: #1a1a1a;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: 3px solid #14502a;
+    outline-offset: 2px;
+}
+
+.join-form input:user-invalid,
+.join-form select:user-invalid {
+    border-color: #b00020;
+}
+
+.join-form button[type="submit"],
+.close-modal {
+    font: inherit;
+    font-weight: 600;
+    background: #14502a;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+}
+
+.join-form button[type="submit"]:hover,
+.close-modal:hover {
+    background: #0e3a1e;
+}
+
+.levels h2 {
+    margin-top: 0;
+}
+
+.level-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.level-card {
+    background: #fff;
+    border: 1px solid #cfd8d2;
+    border-top: 8px solid #14502a;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    animation: card-in 0.8s ease-out both;
+}
+
+.level-card h3 {
+    margin: 0 0 0.5rem;
+}
+
+.level-card a {
+    color: #14502a;
+    font-weight: 600;
+}
+
+.level-card.bronze {
+    border-top-color: #cd7f32;
+    animation-delay: 0.2s;
+}
+
+.level-card.silver {
+    border-top-color: #9e9e9e;
+    animation-delay: 0.4s;
+}
+
+.level-card.gold {
+    border-top-color: #ffc107;
+    animation-delay: 0.6s;
+}
+
+@keyframes card-in {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .level-card {
+        animation: none;
+    }
+}
+
+dialog {
+    width: min(90vw, 28rem);
+    border: 2px solid #14502a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: #1a1a1a;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+dialog h2 {
+    margin-top: 0;
+    color: #14502a;
+}
+
+/* ---------- Thank-you page ---------- */
+.summary {
+    display: grid;
+    gap: 0.25rem 1rem;
+    background: #fff;
+    border: 1px solid #cfd8d2;
+    border-left: 8px solid #ffc107;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.summary dt {
+    font-weight: 600;
+    color: #14502a;
+    margin-top: 0.75rem;
+}
+
+.summary dt:first-child {
+    margin-top: 0;
+}
+
+.summary dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+}

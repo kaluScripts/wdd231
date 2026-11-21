@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Enugu Chamber of Commerce</title>
+    <meta name="description"
+        content="Apply for membership with the Enugu Chamber of Commerce. Compare Non-Profit, Bronze, Silver and Gold levels and submit your application online.">
+    <meta name="author" content="Darlene Kalu">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Enugu Chamber of Commerce">
+    <meta property="og:title" content="Join | Enugu Chamber of Commerce">
+    <meta property="og:description"
+        content="Apply for membership with the Enugu Chamber of Commerce. Compare Non-Profit, Bronze, Silver and Gold levels and submit your application online.">
+    <meta property="og:image" content="https://kaluscripts.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:image:alt" content="Enugu Chamber of Commerce logo on a green background">
+    <meta property="og:url" content="https://kaluscripts.github.io/wdd231/chamber/join.html">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="" width="48" height="48">
+            <span>Enugu Chamber of Commerce</span>
+        </a>
+        <button id="menu" type="button" aria-label="Toggle menu" aria-controls="nav-list"
+            aria-expanded="false">&#9776;</button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <div class="join-layout">
+            <form action="thankyou.html" method="get" class="join-form">
+                <label>First Name
+                    <input type="text" name="first" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+
+                <label>Last Name
+                    <input type="text" name="last" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>Organizational Title
+                    <input type="text" name="orgtitle" title="At least 7 characters: letters, spaces and hyphens only"
+                        autocomplete="organization-title" pattern="[A-Za-z \-]{7,}">
+                </label>
+
+                <label>Email Address
+                    <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                        placeholder="name@example.com" required>
+                </label>
+
+                <label>Mobile Phone Number
+                    <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                </label>
+
+                <label>Business / Organization Name
+                    <input type="text" name="organization" title="Enter your business or organization name"
+                        autocomplete="organization" required>
+                </label>
+
+                <label>Membership Level
+                    <select name="membership" title="Choose a membership level" required>
+                        <option value="" selected disabled>Select a level</option>
+                        <option value="np">NP Membership (non-profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Business / Organization Description
+                    <textarea name="description" title="Briefly describe your business or organization"
+                        rows="4"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit">Submit Application</button>
+            </form>
+
+            <section class="levels" aria-labelledby="levels-title">
+                <h2 id="levels-title">Membership Levels</h2>
+                <div class="level-cards">
+                    <article class="level-card np">
+                        <h3>NP Membership</h3>
+                        <a href="#np-modal" data-modal="np-modal">Learn more</a>
+                    </article>
+                    <article class="level-card bronze">
+                        <h3>Bronze Membership</h3>
+                        <a href="#bronze-modal" data-modal="bronze-modal">Learn more</a>
+                    </article>
+                    <article class="level-card silver">
+                        <h3>Silver Membership</h3>
+                        <a href="#silver-modal" data-modal="silver-modal">Learn more</a>
+                    </article>
+                    <article class="level-card gold">
+                        <h3>Gold Membership</h3>
+                        <a href="#gold-modal" data-modal="gold-modal">Learn more</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <dialog id="np-modal">
+            <h2>NP Membership</h2>
+            <p>For non-profit organizations. <strong>No fee.</strong></p>
+            <ul>
+                <li>Listing in the member directory</li>
+                <li>Invitations to community networking events</li>
+                <li>Monthly chamber newsletter</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h2>Bronze Membership</h2>
+            <p>Entry level for small businesses. <strong>&#8358;25,000 per year.</strong></p>
+            <ul>
+                <li>Everything in NP Membership</li>
+                <li>Discounted tickets to chamber events</li>
+                <li>One free training workshop per year</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h2>Silver Membership</h2>
+            <p>For growing businesses. <strong>&#8358;50,000 per year.</strong></p>
+            <ul>
+                <li>Everything in Bronze Membership</li>
+                <li>Chance to be a spotlight member on the home page</li>
+                <li>Advertising space in the chamber newsletter</li>
+                <li>Three free training workshops per year</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h2>Gold Membership</h2>
+            <p>Our top level. <strong>&#8358;100,000 per year.</strong></p>
+            <ul>
+                <li>Everything in Silver Membership</li>
+                <li>Priority spotlight placement on the home page</li>
+                <li>Free booth at the annual trade fair</li>
+                <li>Unlimited training workshops</li>
+                <li>Discounts on all chamber events</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Enugu Chamber of Commerce</strong></p>
+            <p>12 Ogui Road</p>
+            <p>Enugu 400001, Nigeria</p>
+            <p>info@enuguchamber.example</p>
+            <p>+234 800 555 0100</p>
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/" aria-label="YouTube"><img src="images/youtube.svg" alt="" width="40"
+                    height="40"></a>
+            <a href="https://x.com/" aria-label="X"><img src="images/twitter-x-icon.svg" alt="" width="40" height="40"></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="" width="40"
+                    height="40"></a>
+        </div>
+        <div class="footer-info">
+            <p>WDD 231 Class Project</p>
+            <p>Darlene Kalu</p>
+            <p>&copy; <span id="currentyear"></span> Enugu Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

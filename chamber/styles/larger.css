@@ -74,3 +74,19 @@
   .card-body img { width: 72px; height: 72px; }
   .details { font-size: 0.85rem; }
 }
+@media (min-width: 900px) {
+    .join-layout {
+        grid-template-columns: 3fr 2fr;
+        align-items: start;
+    }
+}
+
+@media (min-width: 600px) {
+    .summary {
+        grid-template-columns: max-content 1fr;
+    }
+
+    .summary dt {
+        margin-top: 0;
+    }
+}
