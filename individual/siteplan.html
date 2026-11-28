@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visit Enugu | Site Plan</title>
+  <meta name="description" content="Site plan for Visit Enugu, a three-page travel guide to Enugu, Nigeria, the Coal City.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600;700&amp;display=swap">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <h1>Visit Enugu: Site Plan</h1>
+    <p>Individual project plan for a travel guide to Enugu, Nigeria, the "Coal City".</p>
+  </header>
+
+  <nav aria-label="Site plan sections">
+    <ul>
+      <li><a href="#name">Site Name</a></li>
+      <li><a href="#purpose">Purpose</a></li>
+      <li><a href="#scenarios">Scenarios</a></li>
+      <li><a href="#colors">Color Scheme</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#wireframe">Wireframe</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="name">
+      <h2>1. Site Name</h2>
+      <p><strong>Visit Enugu</strong></p>
+      <ul>
+        <li>The name says plainly what the site is for: helping people visit Enugu, Nigeria.</li>
+        <li>It is short, easy to remember and easy to search for, and "Coal City", the nickname of Enugu, is used as the tagline.</li>
+      </ul>
+      <p>Optional domain idea: <code>visit-enugu.com</code></p>
+    </section>
+
+    <section id="purpose">
+      <h2>2. Site Purpose</h2>
+      <p>Information about Enugu is scattered, outdated or incomplete online. The site gives visitors and newcomers one clear place to see what Enugu offers and how to plan a trip. It has three pages:</p>
+      <ul>
+        <li><strong>Home:</strong> introduces Enugu and shows featured attractions and the current weather.</li>
+        <li><strong>Places:</strong> lists attractions such as the Awhum Waterfall, Udi Hills, Nike Lake Resort and Ngwo Pine Forest. Visitors can filter them by category, and the places are loaded from a JSON file.</li>
+        <li><strong>Plan Your Visit:</strong> covers local food, getting around and the best time to visit, plus a contact form for questions.</li>
+      </ul>
+    </section>
+
+    <section id="scenarios">
+      <h2>3. Scenarios</h2>
+      <p>Questions a target visitor would ask:</p>
+      <ol>
+        <li>What are the best places to visit in Enugu, and can I filter them by type, such as waterfalls, hills or resorts?</li>
+        <li>What is the weather in Enugu right now, and when is the best time of year to visit?</li>
+        <li>What local food should I try, and how do I get around the city?</li>
+        <li>How can I ask a question about planning my trip?</li>
+      </ol>
+    </section>
+
+    <section id="colors">
+      <h2>4. Color Scheme</h2>
+      <p>The scheme takes its cue from coal and fire: a dark coal base, a warm ember accent and a soft cream background. It is used on this document.</p>
+      <table>
+        <caption>Site colors and where they are used</caption>
+        <thead>
+          <tr>
+            <th scope="col">Swatch</th>
+            <th scope="col">Name</th>
+            <th scope="col">Hex</th>
+            <th scope="col">Where it is used</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="swatch swatch-coal"></span></td>
+            <td>Coal</td>
+            <td><code>#1F2A2E</code></td>
+            <td>Headings, body text, header and footer backgrounds, links</td>
+          </tr>
+          <tr>
+            <td><span class="swatch swatch-ember"></span></td>
+            <td>Ember</td>
+            <td><code>#E07B39</code></td>
+            <td>Accents: buttons, borders, navigation bar background, table header</td>
+          </tr>
+          <tr>
+            <td><span class="swatch swatch-cream"></span></td>
+            <td>Cream</td>
+            <td><code>#F4EFE6</code></td>
+            <td>Page background and text on dark backgrounds</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Ember is only used as a background behind coal text. Coal on ember has a contrast ratio of about 4.9:1, and cream on coal is above 12:1.</p>
+    </section>
+
+    <section id="typography">
+      <h2>5. Typography</h2>
+      <ul>
+        <li><strong class="font-heading">Poppins (600 and 700)</strong>: used for the site name, page headings and buttons.</li>
+        <li><strong>Open Sans (400 and 600)</strong>: used for paragraphs, lists, navigation and form text.</li>
+      </ul>
+      <p class="font-heading sample">Sample heading in Poppins</p>
+      <p class="sample">Sample paragraph in Open Sans: Enugu sits among hills and is known for its cool weather and green spaces.</p>
+    </section>
+
+    <section id="wireframe">
+      <h2>6. Wireframe</h2>
+      <p>Hand-drawn black and white sketches of the home page.</p>
+      <figure>
+        <img src="images/wireframe-mobile.jpg" alt="Hand-drawn wireframe of the home page on a small mobile screen: header, hero with the tagline, intro text, weather box, four attraction cards in one column, and footer.">
+        <figcaption>Small viewport (mobile)</figcaption>
+      </figure>
+      <figure>
+        <img src="images/wireframe-desktop.png" alt="Hand-drawn wireframe of the home page on a wide screen: header with horizontal navigation, hero, intro text beside a weather box, four attraction cards in a row, and footer.">
+        <figcaption>Large viewport (desktop and tablet)</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Visit Enugu site plan &middot; WDD 231</p>
+  </footer>
+</body>
+</html>
